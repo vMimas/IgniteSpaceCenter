@@ -1,0 +1,249 @@
+/*
+* Universal Styles
+* Header/Nav Styles
+*/
+
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  color: #353535;
+}
+
+/* Header/Nav Styles */
+header {
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  border-bottom: 10px solid #284B63;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+header h2 {
+  background-color: transparent;
+  color: #284B63;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 1rem 1rem;
+}
+
+footer {
+  justify-content: space-between;
+  background-color: #353535;
+  border-top: 10px solid #284B63;
+  color: White;
+  font-size: .75rem;
+  padding: .5rem 2rem;
+  min-height: 5rem;
+}
+
+footer h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-right: .5rem;
+}
+
+aside {
+  color: #284B63;
+  max-width: 50%;
+  margin: 0 2rem;
+}
+
+a {
+  color: #284B63;
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu';
+}
+
+h2 {
+  background-color: #284B63;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.banner {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-color: #CCC;
+  color: white;
+  padding: 0 2rem;
+  background-image: linear-gradient(rgba(81, 143, 184, 0.65), rgba(40, 75, 99, 0.65)), url("../images/banner-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-shadow: 0px 0px 6px #000000;
+}
+
+.banner p, .banner h1 {
+  margin: 1rem 0;
+  text-align: center;
+}
+.banner h1 { font-size: 3rem; }
+.banner p { max-width: 75%; }
+
+.ignite-logo img {
+  margin: 0 .6em;
+  vertical-align: text-top;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+div.flex-container { margin: 5rem 0; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  justify-content: space-between;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 .5rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  margin: .5rem 0;
+}
+
+.ignite-logo { font-family: 'Red Rose', sans-serif; }
+
+.quote {
+  font-style: italic;
+}
+
+.cite { font-weight: bold; }
+
+#events .flex-container { justify-content: center; }
+
+#events figure {
+  width: 400px;
+  border-top: 2rem solid #1F1F1F;
+  margin: .5rem;
+}
+
+#events figcaption {
+  text-align: center;
+  padding: .5rem;
+  color: white;
+  background-color: #1F1F1F;
+}
+
+#events img {
+  width: 100%;
+  height: auto;
+}
+
+#events .img-container {
+  overflow: hidden;
+  height: 225px;
+  vertical-align: text-bottom;
+}
+
+#visit {
+  background-color: #D9D9D9;
+  color: #284B63;
+  min-height: 300px;
+  margin-bottom: -2rem;
+  padding-bottom: 2rem;
+}
+
+#explore .flex-container {
+  padding: 0 1rem;
+  align-items: stretch;
+}
+
+#visit .flex-container {
+  margin: 2rem auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#visit .flex-column {
+  margin-right: 2rem;
+}
+
+#visit .flex-item {
+  padding: 0 1rem;
+  width: 190px;
+  height: 140px;
+  overflow: hidden;
+}
+
+.flex-item img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 760px) {
+  aside { max-width: 50%; }
+  .order-1 { order: 1; }
+  .order-2 { order: 3; }
+  .order-3 { order: 2; }
+  .gallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .banner {
+    position: relative;
+    top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  aside { max-width: 90%; }
+  #visit {
+    flex-direction: column;
+  }
+  #visit .flex-column {
+    flex-direction: row;
+  }
+}
+/*
+@media only screen and (max-width: 650px) {
+  footer.flex-container { flex-direction: column !important; }
+  .order-1 { display: none; }
+  .order-2 { order: 2; }
+  .order-3 { order: 3; }
+}
+*/
